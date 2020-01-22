@@ -36,23 +36,27 @@ print(my_last_name[-2:])
 #       -first name six times
 print(my_first_name, my_last_name)
 print(my_first_name * 6)
+print(my_first_name, my_last_name)
 
 
 # TODO Formatting Strings
 #   - Print the following items (one per line) (print using variables)
 #       - first name last name -was born in- year of birth
 #       - first name last name -was born in- year of birth. first name -enjoyed celebrating- current year
-birth_phrase = 'Nate Deem was born in 1998'
-print(birth_phrase[0:])
-print(birth_phrase[0:], my_first_name, 'enjoyed celebrating', current_year)
- 
+txt = my_first_name + my_last_name + ' was born in {}'
+print (txt.format(my_year_of_birth))
+txt2 = my_first_name + my_last_name + ' was born in {}. {} enjoyed celebrating {}'
+print (txt2.format(my_year_of_birth, my_first_name, current_year))
+
 
 # TODO Escape characters
 #   - Print the following items (one per line) (print using variables)
 #       - possesive first name -birth year is- year of birth 
 #       - tab last name current year
-print('Nate\'s', 'birth year is', my_year_of_birth)
-print(   my_last_name, current_year)
+txt3 = '{}\'s birth year is {}'
+print(txt3.format(my_first_name, my_year_of_birth))
+txt4 = '\t {} {}'
+print(txt4.format(my_last_name, current_year))
 
 
 # TODO String methods
