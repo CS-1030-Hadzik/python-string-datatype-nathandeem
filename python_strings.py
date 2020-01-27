@@ -64,6 +64,6 @@ print(txt4.format(my_last_name, current_year))
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
-print(my_first_name.upper(), my_last_name.upper())
-print(len(my_last_name))
 print(my_first_name.lower(), my_last_name.lower())
+print(len(my_last_name))
+print(my_first_name.upper(), my_last_name.upper())
